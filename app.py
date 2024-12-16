@@ -90,4 +90,4 @@ def format_datetime(value, format='%Y-%m-%d %H:%M:%S'):
 
 
 if __name__ == "__main__":
-    app.run(host='192.168.195.65', port=5000, debug = True)
+    app.run(host='0.0.0.0', port=5000, debug = True)
