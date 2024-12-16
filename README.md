@@ -78,7 +78,7 @@ Together, these tools allow for the development of a modern web app with a clean
 
 ## Demo
 
-You can try a live demo of the Todo App [here](https://ajitchoudhary.pythonanywhere.com/).
+You can try a live demo of the Todo App <a href="https://ajitchoudhary.pythonanywhere.com/" target="_self">here</a>.
 
 ## Contributing
 
