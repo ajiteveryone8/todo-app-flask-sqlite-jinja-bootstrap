@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %} About {% endblock title %}
+
+{% block body %}
+
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h3>About This Web App</h3>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Welcome to the Todo App</h5>
+                <p class="card-text">
+                    This web app is built with modern technologies to help you manage your tasks efficiently. Below is an overview of the key technologies and tools that have been used in building this application.
+                </p>
+                
+                <h4>Technologies Used</h4>
+                
+                <h5>1. Flask - A Python Web Framework</h5>
+                <p>
+                    Flask is a lightweight and easy-to-use web framework for Python. It is designed to help developers build simple and scalable web applications. Flask is known for its flexibility, which makes it easy to extend and integrate with various databases and front-end tools.
+                </p>
+                <p>
+                    In this application, Flask serves as the backend framework to handle routing, request processing, and rendering dynamic web pages using templates.
+                </p>
+                
+                <h5>2. Jinja2 - Templating Engine</h5>
+                <p>
+                    Jinja2 is the templating engine used in Flask. It allows you to dynamically generate HTML files and insert Python-like logic into the HTML. Jinja2 provides the ability to extend templates, loop through data, and insert variables into your HTML.
+                </p>
+                <p>
+                    In this Todo app, Jinja2 is used to render dynamic content such as displaying the list of tasks and handling user input. It also helps create reusable templates (like `base.html`) to maintain a consistent design across the app.
+                </p>
+                
+                <h5>3. SQLite - Relational Database</h5>
+                <p>
+                    SQLite is a lightweight relational database management system (RDBMS) used in this app to store and manage todo tasks. It is serverless and self-contained, making it perfect for small to medium-scale applications.
+                </p>
+                <p>
+                    In this app, SQLite is used to store information about the tasks, such as the title, description, and task status. It's a good choice for small applications due to its simplicity and ease of setup.
+                </p>
+                
+                <h5>4. Bootstrap - Front-End Framework</h5>
+                <p>
+                    Bootstrap is a popular front-end framework that helps build responsive and mobile-first websites. It provides ready-to-use components like buttons, forms, navigation bars, and more, which can be easily customized to create modern and user-friendly web designs.
+                </p>
+                <p>
+                    In this Todo app, Bootstrap is used to style the pages and make them responsive. It ensures that the app looks good on any device, from mobile phones to desktop computers. Bootstrap's grid system and pre-styled components help streamline the UI development process.
+                </p>
+
+                <h5>5. Other Tools and Technologies</h5>
+                <p>
+                    In addition to the core technologies mentioned above, the app also uses:
+                </p>
+                <ul>
+                    <li><strong>HTML5 & CSS3</strong> for structuring and styling web pages.</li>
+                    <li><strong>JavaScript</strong> for basic client-side interactions.</li>
+                    <li><strong>SQLAlchemy</strong> (optional) as an ORM (Object-Relational Mapper) to interact with the SQLite database (if you prefer to use it over raw SQL queries).</li>
+                </ul>
+
+                <h4>How the App Works</h4>
+                <p>
+                    The Todo App allows users to:
+                </p>
+                <ul>
+                    <li>Create new tasks by entering a title and description.</li>
+                    <li>Update existing tasks to mark them as completed or edit their details.</li>
+                    <li>Delete tasks that are no longer needed.</li>
+                    <li>Search for tasks by title or description.</li>
+                </ul>
+                <p>
+                    The app uses Flask to handle all HTTP requests and responses. When a user interacts with the app (e.g., creating or updating a task), the backend processes the request and updates the SQLite database. The changes are then reflected in the frontend, which is styled with Bootstrap for a clean and user-friendly experience.
+                </p>
+
+                <h4>Why These Technologies?</h4>
+                <p>
+                    The combination of Flask, Jinja2, SQLite, and Bootstrap was chosen for its simplicity, speed, and scalability. Flask provides a minimalistic but powerful framework for Python, Jinja2 allows for dynamic rendering of HTML templates, SQLite offers an easy-to-use database solution, and Bootstrap ensures the app looks polished and is responsive.
+                </p>
+                <p>
+                    These technologies together make it easy to create a web app with a modern interface and solid functionality, all without unnecessary complexity.
+                </p>
+
+                <h4>Get Involved</h4>
+                <p>
+                    If you're interested in learning more about the technologies used or contributing to the development of this app, feel free to visit the project repository or reach out to the team!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+{% endblock body %}
